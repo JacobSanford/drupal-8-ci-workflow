@@ -1,5 +1,8 @@
 # Local development
-Local development 
+It is desirable to have Local development as closely similar to production as possible.
+
+## Local MySQL server
+docker-compose.yml
 
 ## Dockworker
 
