@@ -8,16 +8,7 @@ The Lean Instance Repository serves as the keystone in our workflow. Using a Lea
  * Platform.sh - [Drupal 8 Format](https://docs.platform.sh/frameworks/drupal8.html)
  * Acquia - [BLT](https://github.com/acquia/blt)
 
-By understanding and borrowing from some of these formats (as well as introducing new features), our lean repository has evolved into a entity that contains all the information and data necessary to build the instance, including:
-
- * Configuration for daemons used to serve the instance
- * Version metadata for all upstream projects and libraries, including Drupal core and contrib modules
- * Custom modules, themes and install profiles created for the instance
- * Thematic assets
- * Source data used to build sample content
- * Tests (Behat, Visual Regression) for the instance
- * Frameworks and structures required to bootstrap the project locally and in a testing environment
- * Codification of settings and differences between environments : local, stage, prod.
+By understanding and borrowing from some of these formats (as well as introducing new features), our lean repository has evolved into a entity that contains all the information and data necessary to build the instance.
 
 (Example : [unbherbarium.lib.unb.ca](https://github.com/unb-libraries/unbherbarium.lib.unb.ca))
 
@@ -49,3 +40,13 @@ By understanding and borrowing from some of these formats (as well as introducin
 ├── dockworker.yml
 └── README.md
 ```
+
+ * ```build```: Version metadata for all upstream projects and libraries, including Drupal core and contrib modules
+ * ```config-yml```:
+ * ```custom```: Custom modules, themes and install profiles created for the instance
+ * ```env```: Environment variables for Docker/Jenkins
+ * ```package-conf```: Configuration for daemons used to serve the instance
+ * ```tests```: Tests (Behat, Visual Regression) for the instance
+ * Frameworks and structures required to bootstrap the project locally and in a testing environment
+ * Codification of settings and differences between environments : local, stage, prod.
+ * Source data used to build sample content
