@@ -8,6 +8,8 @@ A team member develops a fantastic feature and pushes a commit to the Lean Insta
 ### a) Github Slack-Notifies Team of The Commit (via Service Integration)
 Github notifies the team of the new commit via Slack.
 
+![Github Slack Commit](img/fallout/github.png "Github Commit Notification")
+
 ### b) Github Notifies Travis of the Commit (via Service Integration)
 Github invokes its service integrations, and either travis-ci.org (Public GitHub Repository) or travis-ci.com (Private GitHub Repository) is notified of the new commit.
 
@@ -28,7 +30,8 @@ https://github.com/travis-ci/travis-ci/issues/8694
 ### b) Travis Builds the Image
 Travis builds the lean repository into a Docker image. The build is fully logged:
 
-https://travis-ci.org/unb-libraries/unbherbarium.lib.unb.ca/builds/302439089
+![Travis Image Build](img/fallout/travis1.png "Travis Image Build")
+(https://travis-ci.org/unb-libraries/unbherbarium.lib.unb.ca/builds/302439089)
 
 ### c) Travis Tests the Image
 Once the repository is built into an image, the image is launched as a container, and tests are performed. Several elements of the build are tested:
@@ -54,6 +57,7 @@ https://github.com/unb-libraries/CargoDock/blob/master/travis/triggerKubeDeploy.
 
 ### g) Travis Notifies Slack
 As a final step, travis notifies Slack of the build/test success.
+![Travis Slack Notification](img/fallout/travis_slack.png "Travis Slack Notification")
 
 ## 4. Jenkins
 ### a) Jenkins Deploys New Image to Kubernetes
