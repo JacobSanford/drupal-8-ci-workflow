@@ -30,12 +30,12 @@ Several goals were proposed for the new workflow:
  * Minimal workstation local tool installation and simple initial deployment
  * Near transparent development and workflow for developers, requiring as little knowledge of Docker / tools as possible.
 
-
 ## The Components
 * [Lean Repository](LeanRepository.md)
 * [Docker](Docker.md)
-* [Base Image](BaseImage.md)
+* [Docker Base Image](BaseImage.md)
 * [DockWorker](DockWorker.md)
+* [CargoDock](CargoDock.md)
 * [Travis](Travis.md)
 * [Jenkins](Jenkins.md)
 * [Kubernetes](Kubernetes.md)
