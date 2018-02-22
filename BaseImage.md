@@ -1,8 +1,7 @@
 # Base Image : docker-drupal
-We have developed a base image that all other drupal instances are layered upon.
+We have developed a [base image](https://github.com/unb-libraries/docker-drupal) that all other Drupal instances are layered upon.
 
 ![Github Base Drupal Image](img/github_base_image.png "Github Base Drupal Image")
-(https://github.com/unb-libraries/docker-drupal)
 
 ## Why not the community Drupal Image?
 Originally, the [official Drupal Docker image](https://hub.docker.com/_/drupal/) wasn't ideal. It was bundled with apache only, was quite large in size, and contained a large amount of packages that didn't fit in with our lean container philosophy. Things have changed quite a bit in the last 3 years, however, and the community image is a great option.
