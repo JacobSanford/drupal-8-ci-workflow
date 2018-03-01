@@ -23,7 +23,10 @@ Several goals were proposed for the new workflow:
  * Synchronized branches - merges/rebases pushed upstream through environments.
  * Public lean instance repositories (where possible) with secrets stored in orchestration layer
  * Track upstream libraries through metadata only, avoid tracking then in VCS.
- * Two layers of testing - Behat and Unit Tests.
+ * Three layers of testing
+   * [Unit Tests](testing/UnitTests.md)
+   * [Behat Tests](testing/Behat.md)
+   * [Visual Regression Tests](testing/VisualRegression.md)
 
 ### Developer Experience
  * Local development instances that approach parity with production deployment.
