@@ -2,7 +2,7 @@
 ## Small Team, Big Tools
 
 ## Introduction
-In 2010, while participating in a usual morning of manual Drupal module updates, a colleague at [UNB Libraries](https://www.lib.unb.ca/) named [Kassim Machioudi](https://github.com/kaschioudi) suggested:
+In 2010, while participating in a usual morning of manual Drupal module updates, a colleague at [UNB Libraries](https://www.lib.unb.ca/), [Kassim Machioudi](https://github.com/kaschioudi) suggested:
 
 > Imagine if we only needed to change a version number in a metadata file to push all of these updates?
 
@@ -42,6 +42,12 @@ Several goals were proposed for the new workflow:
 * [Travis](Travis.md)
 * [Jenkins](Jenkins.md)
 * [Kubernetes](Kubernetes.md)
+* [Drupalista](Drupalista.md)
 
 ## Specific Cases
 * [What Happens When a Commit Is Pushed?](CommitFallout.md)
+
+## Contributors
+* [Jacob Sanford](LeanRepository.md)
+* [Brian Cassidy](Docker.md)
+* [Jeremy McDermott](BaseImage.md)

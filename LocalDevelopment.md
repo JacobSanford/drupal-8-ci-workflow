@@ -8,11 +8,11 @@ docker-compose.yml
 
 https://github.com/unb-libraries/dockworker
 
-Dockworker is a custom library that provides a series of RoboPHP commands which simplify the local deployment process for developers. Development on an instanct starts very quickly - try it yourself:
+Dockworker is a custom library, developed as a series of RoboPHP commands that simplifies the local deployment process, particularly with Drupal. Local development of an instance can begin quickly and with almost no dependency installation - try it yourself with one of our live sites:
 
 ```
 > git clone git://github.com/unb-libraries/unbherbarium.lib.unb.ca.git unbherbarium.lib.unb.ca
 > cd unbherbarium.lib.unb.ca
-> composer install
-> dockworker instance:start
+> composer install --prefer-dist
+> vendor/bin/dockworker instance:start-over
 ```
