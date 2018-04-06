@@ -1,5 +1,5 @@
 # Base Image : docker-drupal
-We have developed a [base image](https://github.com/unb-libraries/docker-drupal) that all other Drupal instances are layered upon.
+We have developed a [base image](https://github.com/unb-libraries/docker-drupal) that all other Drupal instances are extended from.
 
 ![Github Base Drupal Image](img/github_base_image.png "Github Base Drupal Image")
 
