@@ -47,3 +47,5 @@ after_success:
   - CargoDock/travis/cleanupOldImages.sh
   - CargoDock/travis/triggerKubeDeploy.sh
 ```
+
+An successful Travis build log [can be seen here](https://travis-ci.org/unb-libraries/unbherbarium.lib.unb.ca/builds/362701681).
