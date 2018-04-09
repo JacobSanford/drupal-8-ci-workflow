@@ -10,13 +10,13 @@ Distilled down : Kubernetes itself is a series of docker containers that work to
 There are 4 primary components of our applications in Kubernetes:
 
 ### 1. The Docker Image
-Docker containers are deployed in Kubernetes from pre-built images. We build these images in Jenkins (using [Cargodock](https://github.com/unb-libraries/CargoDock/tree/kubernetes)) from our [Lean Instance Repositories](LeanRepository.md) (ex: [unbherbarium.lib.unb.ca](https://github.com/unb-libraries/unbherbarium.lib.unb.ca)).
+Docker containers are deployed in Kubernetes from pre-built images. We build these images in Travis (using [Cargodock](https://github.com/unb-libraries/CargoDock/tree/kubernetes)) from our [Lean Instance Repositories](LeanRepository.md) (ex: [unbherbarium.lib.unb.ca](https://github.com/unb-libraries/unbherbarium.lib.unb.ca)).
 
 Once an image is built, it must be stored in a location that Kubernetes can access it. This storage location is known as a [Docker Registry](https://docs.docker.com/registry/). Docker Registries can be public (anyone can access the image), or private (restricted access).
 
 Although most Lean Instance Repositories for our applications are public on GitHub, and we we go to great efforts to ensure no private data is baked into the resultant Docker images, we store the built images for **site applications** privately in Amazon's [Elastic Container Registry](https://aws.amazon.com/ecr/), a private registry. Storing the images in the AWS ECR also makes our applications much more portable - if we wish to run an application in the cloud, only small changes in the build pipeline would be necessary.
 
-Images that aren't related to site applications (i.e. the [Hodor Slack bot](https://hub.docker.com/r/jacobsanford/slack-hodor/), are stored in the public [DockerHub registry](https://hub.docker.com/).
+Images that are not related to site applications (i.e. the [Hodor Slack bot](https://hub.docker.com/r/jacobsanford/slack-hodor/), are stored in the public [DockerHub registry](https://hub.docker.com/).
 
 ### 2. The Kubernetes Deployment/Service Definition
 Applications are represented in the Kubernetes ecosystem by Deployments and Services. One application has both a deployment and a service.

@@ -23,8 +23,8 @@ Several goals were proposed for the new workflow:
  * Synchronized branches - merges/rebases pushed upstream through environments.
  * Publically available / open lean instance and tool repositories (where possible)
  * Secrets stored in orchestration layer
- * Track upstream libraries through metadata only, avoid tracking then in VCS.
- * Instances tested with three layers of testing Unit Tests, Behat and Visual Regression Tests.
+ * Track upstream libraries through metadata only - avoid tracking files in lean repositories.
+ * Instances tested with three layers of testing : Unit Tests, Behat and Visual Regression Tests.
 
 ### Developer Experience
  * Local development instances that approach parity with production instances.

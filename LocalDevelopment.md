@@ -4,7 +4,7 @@ The goals at the outset of this project related to local development were:
  * Local development instances that approach parity with production instances.
  * Minimal workstation local tool installation.
  * A workflow that required as little knowledge of Docker / underlying tools as possible.
- * Extremely quick 'bare to dev' times.
+ * Extremely quick local development kickstart times.
 
 ## Dockworker
 To that end, we developed Dockworker :
@@ -27,3 +27,5 @@ And you're developing! To get a list of available dockworker commands:
 ```
 vendor/bin/dockworker
 ```
+
+## Code Linting
