@@ -21,33 +21,35 @@ Several goals were proposed for the new workflow:
 ### General Goals
  * Multiple deployment environments - beginning with staging and production.
  * Synchronized branches - merges/rebases pushed upstream through environments.
- * Public lean instance repositories (where possible) with secrets stored in orchestration layer
+ * Publically available / open lean instance and tool repositories (where possible)
+ * Secrets stored in orchestration layer
  * Track upstream libraries through metadata only, avoid tracking then in VCS.
- * Three layers of testing
-   * [Unit Tests](testing/UnitTests.md)
-   * [Behat Tests](testing/Behat.md)
-   * [Visual Regression Tests](testing/VisualRegression.md)
+ * Instances tested with three layers of testing Unit Tests, Behat and Visual Regression Tests.
 
 ### Developer Experience
- * Local development instances that approach parity with production deployment.
- * Minimal workstation local tool installation and simple initial deployment
- * Near transparent development and workflow for developers, requiring as little knowledge of Docker / tools as possible.
+ * Local development instances that approach parity with production instances.
+ * Minimal workstation local development tool installation.
+ * A workflow that requires as little knowledge of Docker / underlying tools as possible.
+ * Extremely quick local development kickstart times.
 
 ## The Components
-* [Lean Instance Repository](LeanRepository.md)
-* [Docker](Docker.md)
-* [Docker Base Image](BaseImage.md)
-* [DockWorker](DockWorker.md)
-* [CargoDock](CargoDock.md)
-* [Travis](Travis.md)
-* [Jenkins](Jenkins.md)
-* [Kubernetes](Kubernetes.md)
-* [Drupalista](Drupalista.md)
+ * [Lean Instance Repository](LeanRepository.md)
+ * [Base Docker Image](BaseImage.md)
+ * [CargoDock](CargoDock.md)
+ * [Travis](Travis.md)
+ * [Jenkins](Jenkins.md)
+ * [Kubernetes](Kubernetes.md)
+ * Testing:
+  * [Unit Tests](testing/UnitTests.md)
+  * [Behat Tests](testing/Behat.md)
+  * [Visual Regression Tests](testing/VisualRegression.md)
+ * [Local Development](LocalDevelopment.md)
+ * [Drupalista](Drupalista.md)
 
-## Specific Cases
-* [What Happens When a Commit Is Pushed?](CommitFallout.md)
+## Workflow Topics
+ * [What Happens When a Commit Is Pushed?](CommitFallout.md)
 
 ## Contributors
-* [Jacob Sanford](LeanRepository.md)
-* [Brian Cassidy](Docker.md)
-* [Jeremy McDermott](BaseImage.md)
+ * [Jacob Sanford](LeanRepository.md)
+ * [Brian Cassidy](Docker.md)
+ * [Jeremy McDermott](BaseImage.md)

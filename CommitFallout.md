@@ -23,7 +23,7 @@ Although ```.travis.yml``` references many steps, the actual scripts referenced 
 
 https://github.com/unb-libraries/CargoDock/tree/master/travis
 
-**Be aware the Travis does NOT notify slack that the build starts**. This is a limitation of travis, and I have logged a feature request here:
+**Be aware the Travis does NOT notify slack that the build starts**. This is a limitation of travis, and we have logged a feature request here:
 
 https://github.com/travis-ci/travis-ci/issues/8694
 

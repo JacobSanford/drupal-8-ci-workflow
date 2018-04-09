@@ -1,5 +1,5 @@
 # Travis
-Travis is leveraged to build and test the instance before deploying to staging. Instances building and testing on travis depend heavily on [CargoDock](CargoDock.md) to provide the build and test methods, and each repository contains only a stub [.travis.yml](https://raw.githubusercontent.com/unb-libraries/unbherbarium.lib.unb.ca/dev/.travis.yml) file:
+Travis is leveraged to build and test the instance before deploying to environments. Our instances build and testing on travisci.org, however they depend heavily on [CargoDock](CargoDock.md) to dictate the build and test methods, and each repository contains only a stub [.travis.yml](https://raw.githubusercontent.com/unb-libraries/unbherbarium.lib.unb.ca/dev/.travis.yml) file:
 
 ```
 services:
@@ -48,4 +48,4 @@ after_success:
   - CargoDock/travis/triggerKubeDeploy.sh
 ```
 
-An successful Travis build log [can be seen here](https://travis-ci.org/unb-libraries/unbherbarium.lib.unb.ca/builds/362701681).
+containing some environment variables and boilerplate scripts. A successful Travis build log [can be viewed here](https://travis-ci.org/unb-libraries/unbherbarium.lib.unb.ca/builds/362701681).
