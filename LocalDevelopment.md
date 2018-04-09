@@ -16,3 +16,9 @@ Dockworker is a custom library, developed as a series of RoboPHP commands that s
 > composer install --prefer-dist
 > vendor/bin/dockworker instance:start-over
 ```
+
+To get a list of available dockworker commands:
+
+```
+vendor/bin/dockworker
+```

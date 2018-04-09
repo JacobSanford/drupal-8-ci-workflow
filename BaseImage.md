@@ -1,5 +1,5 @@
 # Base Image : docker-drupal
-We have developed a [base image](https://github.com/unb-libraries/docker-drupal) that all other Drupal instances are extended from.
+We developed a [base Drupal image](https://github.com/unb-libraries/docker-drupal) that all of our Drupal instances are layered upon.
 
 ![Github Base Drupal Image](img/github_base_image.png "Github Base Drupal Image")
 
@@ -18,6 +18,9 @@ This ensures that in all applications (not only Drupal), that we have access to:
  * a consistent pre-init.d script system in /scripts/
  * 15 min cron
  * drush
+
+## Why is Drush bundled?
+When leveraging Drupal as a container, one usually executes Drush using a [drush container](https://github.com/unb-libraries/docker-nginx). As we are building and installing Drupal within the container itself on build/startup, Drush needs is installed for these functions.
 
 ## Build Process
 Why read about this? Watch it happen yourself!

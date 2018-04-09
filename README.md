@@ -1,4 +1,4 @@
-# Our Drupal 8 Open, CI Workflow
+# Our Drupal 8 CI Workflow
 ## Small Team, Big Tools
 
 ## Introduction
@@ -34,7 +34,7 @@ Several goals were proposed for the new workflow:
  * Near transparent development and workflow for developers, requiring as little knowledge of Docker / tools as possible.
 
 ## The Components
-* [Lean Repository](LeanRepository.md)
+* [Lean Instance Repository](LeanRepository.md)
 * [Docker](Docker.md)
 * [Docker Base Image](BaseImage.md)
 * [DockWorker](DockWorker.md)

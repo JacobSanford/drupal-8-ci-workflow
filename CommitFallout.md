@@ -60,7 +60,7 @@ As a final step, travis notifies Slack of the build/test success.
 ![Travis Slack Notification](img/fallout/travis_slack.png "Travis Slack Notification")
 
 ## 4. Jenkins
-### a) Jenkins Deploys New Image to Kubernetes
+### a) Jenkins Deploys New Image to Kubernetes and tests deployment.
 EOM
 
 https://github.com/unb-libraries/CargoDock/blob/master/jenkins/updateKubeDeploymentImage.sh
