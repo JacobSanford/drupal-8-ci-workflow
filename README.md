@@ -40,9 +40,9 @@ Several goals were proposed for the new workflow:
  * [Jenkins](Jenkins.md)
  * [Kubernetes](Kubernetes.md)
  * Testing:
-  * [Unit Tests](testing/UnitTests.md)
-  * [Behat Tests](testing/Behat.md)
-  * [Visual Regression Tests](testing/VisualRegression.md)
+     * [Unit Tests](testing/UnitTests.md)
+     * [Behat Tests](testing/Behat.md)
+     * [Visual Regression Tests](testing/VisualRegression.md)
  * [Local Development](LocalDevelopment.md)
  * [Drupalista](Drupalista.md)
 
