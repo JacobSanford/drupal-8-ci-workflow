@@ -72,3 +72,6 @@ Again, after container launch, the logs are checked for errors:
   * Once 'Running', does the launched container error when starting up/importing configuration?
 
 If errors are detected, the Jenkins build will fail, notifying the team via Slack.
+
+### c) Visual regression tests run
+Backstop tests run and pass/fail the Jenkins job.
