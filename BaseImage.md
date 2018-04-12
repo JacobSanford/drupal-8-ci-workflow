@@ -20,10 +20,12 @@ This ensures that in all applications (not only Drupal), that we have access to:
  * drush
 
 ## Why is Drush bundled?
-When leveraging Drupal as a container, one usually executes Drush using a [drush container](https://github.com/unb-libraries/docker-nginx). As we are building and installing Drupal within the container itself on build/startup, Drush needs is installed for these functions.
+When leveraging Drupal as a container, one usually executes Drush using a [drush container](https://github.com/unb-libraries/docker-nginx). As we are building and installing Drupal within the container itself on build/startup, Drush is needed for these functions.
+
+An improvement for the future is to avoid installing Drush, except in the case of dev instances.
 
 ## Build Process
-Why read about this? Watch it happen yourself!
+Why read about this? Make it happen yourself!
 
 ```
 git clone -b alpine-nginx-php7-8.x-composer git@github.com:unb-libraries/docker-drupal.git docker-drupal

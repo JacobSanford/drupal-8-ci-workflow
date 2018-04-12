@@ -6,33 +6,45 @@ In 2010, while participating in a usual morning of manual Drupal module updates,
 
 > Imagine if we only needed to change a version number in a metadata file to push all of these updates?
 
-At the time, that idea seemed like a far-off dream. We were a small team, running many multisite and standalone instances of Drupal 6 and 5 across multiple servers. Module and core updates were painful - we received individual module update notifications for each site separately, and the update process consisted of extracting module and core tarballs on top of the existing live Drupal tree.
+![Easy Drupal Core Update?](img/4-5-update.gif "Easy Drupal Core Update")
+
+At the time, that idea seemed like a far-off dream. We were a small team, running many multisite and standalone instances of Drupal 5/6 across multiple servers.  Module and core updates were painful - we received individual module update E-Mail notifications for each site separately, and the update process consisted of extracting module and core tarballs on top of the existing live Drupal tree.
 
 Most of the source of our pain, however, wasn't from the labour of doing the updates themselves - rather the problems that arose from doing the updates. When something went wrong, it **went very wrong** - we had no dev server, rollbacks were achieved only from nightly tape backups, and our local development environments were (at best) XAMP/Local Apache, and (usually) the live server itself.
 
 ## Necessary Changes
-Although updates were a clear pain point, there were other pain points as well - most stemming from the the organic evolution of how we originally adopted and worked with Drupal. It wasn't that our workflow was broken - rather that we really had not thought about workflow at all. We were highly motivated to change that. We needed a to improve.
+Although version updates were a clear pain point, there were other pain points as well - most stemming from the the organic evolution of how we originally adopted and worked with Drupal. It wasn't that our workflow was broken - rather that we really had not designed a workflow at all. We were highly motivated to change that. We needed a to improve.
 
-For the sake of brevity, a detailed history of the changes we made is not included in this main document. If you are interested, the steps we took and tools we adopted in the following 8 years is outlined in the [Meandering History of Tools](MeanderingHistoryOfTools.md).
+For the sake of brevity, a detailed history of the changes we made is not included in this main document. If you are interested in such things, the steps we took and tools we adopted in the following 8 years is outlined in the [Meandering History of Tools](MeanderingHistoryOfTools.md).
 
 ## Goals
-Several goals were proposed for the new workflow:
+Great projects begin with defined goals. After some discussion, several goals were proposed for the new workflow:
 
-### General Goals
- * Multiple deployment environments - beginning with staging and production.
- * Synchronized branches - merges/rebases pushed upstream through environments.
- * Publically available / open lean instance and tool repositories (where possible)
- * Secrets stored in orchestration layer
+### General
+
+ * MIT Licensed, open lean instance repositories. Anyone can deploy and bring up our applications.
  * Track upstream libraries through metadata only - avoid tracking files in lean repositories.
- * Instances tested with three layers of testing : Unit Tests, Behat and Visual Regression Tests.
+ * Three layers of instance testing : Unit, Behat and Visual Regression Tests.
+
+### Code
+
+* Deployment environments defined by branches - beginning with dev and production.
+* Synchronized branches - commits rebased upstream through environments.
+
+### Deployment
+
+ * Instances tested automatically prior to deployment.
+ * Secrets stored in orchestration layer.
 
 ### Developer Experience
+
  * Local development instances that approach parity with production instances.
  * Minimal workstation local development tool installation.
- * A workflow that requires as little knowledge of Docker / underlying tools as possible.
+ * A developer workflow that requires as little knowledge of Docker / underlying tools as possible.
  * Extremely quick local development kickstart times.
 
 ## The Components
+In-depth documents discussing each component can be found on the following pages:
  * [Lean Instance Repository](LeanRepository.md)
  * [Base Docker Image](BaseImage.md)
  * [CargoDock](CargoDock.md)
