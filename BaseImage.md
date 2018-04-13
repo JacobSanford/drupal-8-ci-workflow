@@ -16,13 +16,12 @@ This ensures that in all applications (not only Drupal), that we have access to:
 
  * app at /app/html
  * a consistent pre-init.d script system in /scripts/
- * 15 min cron
- * drush
+ * 15 min cronjobs
 
 ## Why is Drush bundled?
-When leveraging Drupal as a container, one usually executes Drush using a [drush container](https://github.com/unb-libraries/docker-nginx). As we are building and installing Drupal within the container itself on build/startup, Drush is needed for these functions.
+When deploying a Drupal application as a container, one usually executes Drush using a separate [drush container](https://github.com/unb-libraries/docker-nginx). As we are building and installing Drupal within the container itself on build/startup, Drush is installed for these functions.
 
-An improvement for the future is to avoid installing Drush, except in the case of dev instances.
+An improvement for the future is to avoid bundling drush, except in the case of dev instances.
 
 ## Build Process
 Why read about this? Make it happen yourself!

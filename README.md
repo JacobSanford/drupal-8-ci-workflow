@@ -1,14 +1,14 @@
 # Our Drupal 8 CI Workflow
 ## Small Team, Big Tools
 
+![Drupal 8 CI Workflow](img/logo.png "Drupal 8 CI Workflow")
+
 ## Introduction
 In 2010, while participating in a usual morning of manual Drupal module updates, a colleague at [UNB Libraries](https://www.lib.unb.ca/), [Kassim Machioudi](https://github.com/kaschioudi) suggested:
 
 > Imagine if we only needed to change a version number in a metadata file to push all of these updates?
 
-![Easy Drupal Core Update?](img/4-5-update.gif "Easy Drupal Core Update")
-
-At the time, that idea seemed like a far-off dream. We were a small team, running many multisite and standalone instances of Drupal 5/6 across multiple servers.  Module and core updates were painful - we received individual module update E-Mail notifications for each site separately, and the update process consisted of extracting module and core tarballs on top of the existing live Drupal tree.
+At the time, that idea seemed like a far-off dream. We were a small team, running many multisite and standalone instances of Drupal 5/6 across multiple servers. Composer hadn't been released yet. Drush make was far from stable. Module and core updates were painful - we received individual module update E-Mail notifications for each site separately, and the update process consisted of extracting module and core tarballs on top of the existing live Drupal tree.
 
 Most of the source of our pain, however, wasn't from the labour of doing the updates themselves - rather the problems that arose from doing the updates. When something went wrong, it **went very wrong** - we had no dev server, rollbacks were achieved only from nightly tape backups, and our local development environments were (at best) XAMP/Local Apache, and (usually) the live server itself.
 
